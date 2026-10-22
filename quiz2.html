@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Pedro</title>
+<link rel="stylesheet" href="cores.css">
+</head>
+<body> 
+<h1>Segunda Pergunta!</h1><br>
+<h2>Qual é o maior país do mundo?</h2>
+<input type ="radio" value="errado" id="p2a" name="PERGUNTA 2">
+<label for="p2a">China</label><br>
+<input type ="radio" value="errado" id="p2b" name="PERGUNTA 2">
+<label for="p2b">Estados Unidos</label><br>
+<input type ="radio" value="certo" id="p2c" name="PERGUNTA 2">
+<label for="p2c">Rússia</label><br>
+<input type ="radio" value="errado" id="p2d" name="PERGUNTA 2">
+<label for="p2d">Canadá</label><br>
+<input type="button" value="Conferir resposta" onclick="verificar()">
+<script>
+    function verificar() {
+        var resposta = document.querySelector('input[name="PERGUNTA 2"]:checked').value;
+        if (resposta === "certo") {
+            alert("Parabéns! Você acertou!");
+        } else {
+            alert("Ops! Você errou. A resposta correta é Rússia.");
+        }
+    }
+</script>
+<input type="checkbox" id="p2e" name="PERGUNTA 2">
+<label for="p2e">Não sei a resposta</label><br>
+
+
+</body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Pedro</title>
+<link rel="stylesheet" href="cores.css">
+</head>
+<img src="pedro - Copia.jpg" alt="Pedro" width="300" height="300">
+<body>
+<header>
+<h1>Quiz Pedro</h1><br>
+<h2>Bem-vindo ao Quiz Pedro! Quero testar se você tem o minimo de conhecimento sobre o assunto geográfico </h2>
+<p>
+    <strong>Instruções:</strong> Responda às perguntas abaixo para testar seu conhecimento sobre o assunto geográfico.
+</p>
+<h2>Primeira Pergunta! : Qual é a capital do Brasil? </h2>
+
+</script>
+<form> 
+        <input type ="radio" value="errado" id="p1a" name="PERGUNTA 1">
+        <label for="p1a">São Paulo</label><br>
+        <input type ="radio" value="errado" id="p1b" name="PERGUNTA 1">
+        <label for="p1b">Rio de Janeiro</label><br>
+        <input type ="radio" value="certo" id="p1c" name="PERGUNTA 1">
+        <label for="p1c">Brasília</label><br>
+        <input type ="radio" value="errado" id="p1d" name="PERGUNTA 1">
+        <label for="p1d">Santa Catarina</label><br>
+    </form>
+</section>
+<section> 
+<input type="button" value="Conferir resposta" onclick="verificar()">
+<script>
+    function verificar() {
+        var resposta = document.querySelector('input[name="PERGUNTA 1"]:checked').value;
+        if (resposta === "certo") {
+            alert("Parabéns! Você acertou!");
+        } else {
+            alert("Ops! Você errou. A resposta correta é Brasília.");
+        }
+    }
+</script>
+<input type="checkbox" id="p1e" name="PERGUNTA 1">
+<label for="p1e">Não sei a resposta</label><br>
+ <br>
+ <br><a href="quiz2.html">
+  <button>Próxima pergunta</button>
+</a>
+
+
+</header>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
